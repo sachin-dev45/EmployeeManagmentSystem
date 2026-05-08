@@ -87,7 +87,7 @@ PUT	/api/employees/{id}	Update employee
 
 DELETE	/api/employees	Delete employee
 
-Future Enhancements
+
 
 🔗 Future Enhancements
 
@@ -100,17 +100,8 @@ Future Enhancements
 • Cloud deployment (AWS / Render / Vercel)
 • Swagger API documentation
 
-Deployment Strategy
 
-🔗 Deployment Strategy
 
-• Backend: AWS / Render / Railway
-
-• Frontend: Vercel / Netlify
-
-• Database: MySQL (Cloud hosted)
-
-Author
 
 🔗 Author
 
