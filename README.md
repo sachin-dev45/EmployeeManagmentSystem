@@ -80,9 +80,13 @@ API Endpoints
 
 Method	Endpoint	Description
 GET	/api/employees	Retrieve all employees
+
 POST	/api/employees	Create new employee
+
 PUT	/api/employees/{id}	Update employee
+
 DELETE	/api/employees	Delete employee
+
 Future Enhancements
 
 🔗 Future Enhancements
