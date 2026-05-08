@@ -1,137 +1,112 @@
-🏢 Employee Management System
+Employee Management System
+Overview
 
-A full-stack Employee Management System designed to efficiently manage employee data with secure authentication, scalable backend architecture, and a responsive frontend interface.
+The Employee Management System is a full-stack web application built using Spring Boot and React. It provides a structured and scalable solution for managing employee records with a clean separation between frontend and backend layers. The system follows RESTful API architecture and is designed with maintainability and extensibility in mind.
 
-This system is built using Spring Boot for backend services and React.js for frontend UI, following REST API architecture and modern software development practices.
+Key Features
+Employee management (Create, Read, Update, Delete)
+RESTful API integration between frontend and backend
+Modular and layered backend architecture (Controller, Service, Repository)
+Responsive and interactive user interface
+Separation of concerns for scalability
+Database integration for persistent storage
+System Architecture
 
-📌 Project Overview
+The application follows a standard client-server architecture:
 
-The Employee Management System enables organizations to manage employee records efficiently, including user authentication, data operations, and structured API communication between frontend and backend systems.
+Frontend: React-based user interface
+Backend: Spring Boot REST API
+Database: MySQL relational database
 
-✨ Key Features
-🔐 Authentication & Security
-User Registration and Login
-Secure password handling
-Email-based user identification
-👥 Employee Management
-Create employee records
-View employee details
-Update employee information
-Delete employee records
-⚙️ System Features
-RESTful API architecture
-DTO-based data handling
-Pagination support for large datasets
-Derived query methods using Spring Data JPA
-🎨 Frontend Features
-Responsive UI using React
-API integration using Axios
-Clean and user-friendly interface
-Component-based architecture
-🏗️ System Architecture
-Frontend (React.js)
-        ↓
-REST API (Spring Boot)
-        ↓
-Service Layer
-        ↓
-Repository Layer (JPA/Hibernate)
-        ↓
-MySQL Database
-🛠️ Tech Stack
-Backend
-Java 17+
-Spring Boot
-Spring Data JPA
-Hibernate
-MySQL
-REST APIs
+Flow:
+
+React UI → REST API → Service Layer → Repository Layer → MySQL Database
+
+Technology Stack
 Frontend
 React.js
-JavaScript (ES6+)
 Axios
-HTML5 / CSS3 / Bootstrap
-Tools & Environment
-Maven
-Node.js & npm
-Git & GitHub
-Postman (API Testing)
-📁 Project Structure
-EmployeeManagmentSystem-Project
+React Router DOM
+HTML5
+CSS3
+JavaScript (ES6+)
+Backend
+Spring Boot
+Spring Web
+Spring Data JPA
+Hibernate
+REST API
+Database
+MySQL
+Project Structure
+EmployeeManagementSystem/
 │
-├── Backend
-│   ├── src/main/java
-│   ├── src/main/resources
-│   ├── pom.xml
-│   └── application.properties
+├── backend/
+│   ├── controller/
+│   ├── service/
+│   ├── repository/
+│   ├── entity/
+│   ├── dto/
+│   ├── config/
+│   └── EmployeeManagementApplication.java
 │
-├── Frontend
-│   ├── src
-│   ├── public
-│   ├── package.json
-│   └── node_modules
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── routes/
+│   │   └── App.js
+│
+├── database/
 │
 └── README.md
-⚙️ Backend Setup (Spring Boot)
-1. Configure Database
-
-Update application.properties:
-
+Setup Instructions
+1. Clone Repository
+git clone https://github.com/sachin-dev45/EmployeeManagmentSystem.git
+2. Backend Setup (Spring Boot)
+Open backend in IntelliJ / Eclipse
+Configure MySQL database in application.properties
 spring.datasource.url=jdbc:mysql://localhost:3306/employee_db
 spring.datasource.username=root
 spring.datasource.password=your_password
-
 spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
-2. Run Backend
-mvn clean install
-mvn spring-boot:run
+
+Run backend:
+
+./mvnw spring-boot:run
 
 Backend runs at:
 
 http://localhost:8080
-💻 Frontend Setup (React)
-1. Install Dependencies
-cd Frontend
+3. Frontend Setup (React)
+cd frontend
 npm install
-2. Start Application
 npm start
 
 Frontend runs at:
 
 http://localhost:3000
-🔗 API Documentation
-Authentication APIs
+API Endpoints
 Method	Endpoint	Description
-POST	/register	Register new user
-POST	/login	Authenticate user
-Employee APIs
-Method	Endpoint	Description
-GET	/employees	Fetch all employees
-GET	/employees/{id}	Fetch employee by ID
-POST	/employees	Add new employee
-PUT	/employees/{id}	Update employee
-DELETE	/employees/{id}	Delete employee
-📊 Database Design
-Employee Table
-id (Primary Key)
-name
-email
-department
-salary
-User Table
-id (Primary Key)
-email
-password
-🚀 Future Enhancements
-🔐 JWT-based authentication
-👮 Role-based access control (Admin / User)
-☁️ Cloud deployment (AWS / Azure)
-📧 Email notifications
-📱 Mobile responsive UI improvements
-🐳 Docker containerization
-👨‍💻 Developer
+GET	/api/employees	Retrieve all employees
+POST	/api/employees	Create new employee
+PUT	/api/employees/{id}	Update employee
+DELETE	/api/employees/{id}	Delete employee
+Features for Future Enhancement
+JWT-based authentication and authorization
+Role-based access control (Admin / User)
+Advanced search and filtering
+Pagination and sorting
+Attendance and payroll modules
+Docker containerization
+Cloud deployment (AWS / Render / Vercel)
+Swagger API documentation
+Deployment Strategy
+Backend: Deploy on AWS / Render / Railway
+Frontend: Deploy on Vercel / Netlify
+Database: MySQL hosted on cloud (AWS RDS / PlanetScale)
+Author
 
 Sachin Waghmare
-GitHub: sachin-dev45
+GitHub: https://github.com/sachin-dev45
