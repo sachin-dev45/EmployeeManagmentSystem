@@ -54,32 +54,7 @@ Database
 
 • MySQL
 
-Project Structure
 
-🔗 Project Structure
-
-EmployeeManagementSystem/
-│
-├── backend/
-│   ├── controller/
-│   ├── service/
-│   ├── repository/
-│   ├── entity/
-│   ├── dto/
-│   ├── config/
-│   └── EmployeeManagementApplication.java
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── routes/
-│   │   └── App.js
-│
-├── database/
-│
-└── README.md
 Setup Instructions
 
 🔗 Setup Instructions
