@@ -89,16 +89,7 @@ DELETE	/api/employees	Delete employee
 
 
 
-🔗 Future Enhancements
 
-• JWT authentication and authorization
-• Role-based access control (Admin / User)
-• Advanced search and filtering
-• Pagination and sorting
-• Attendance and payroll modules
-• Docker containerization
-• Cloud deployment (AWS / Render / Vercel)
-• Swagger API documentation
 
 
 
