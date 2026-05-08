@@ -4,7 +4,7 @@ Employee Management System
 
 The Employee Management System is a full-stack web application built using Spring Boot and React. It provides a structured and scalable solution for managing employee records with a clean separation between frontend and backend layers. The system follows RESTful API architecture and is designed with maintainability and extensibility in mind.
 
-Key Features
+
 
 🔗 Key Features
 
@@ -15,7 +15,7 @@ Key Features
 • Separation of concerns for scalability
 • Database integration for persistent storage
 
-System Architecture
+
 
 🔗 System Architecture
 
@@ -29,7 +29,7 @@ Flow:
 
 React UI → REST API → Service Layer → Repository Layer → MySQL Database
 
-Technology Stack
+
 
 🔗 Technology Stack
 
@@ -55,7 +55,7 @@ Database
 • MySQL
 
 
-Setup Instructions
+
 
 🔗 Setup Instructions
 
@@ -74,11 +74,11 @@ npm start
 Frontend runs at:
 http://localhost:3000
 
-API Endpoints
 
 🔗 API Endpoints
 
 Method	Endpoint	Description
+
 GET	/api/employees	Retrieve all employees
 
 POST	/api/employees	Create new employee
@@ -105,7 +105,9 @@ Deployment Strategy
 🔗 Deployment Strategy
 
 • Backend: AWS / Render / Railway
+
 • Frontend: Vercel / Netlify
+
 • Database: MySQL (Cloud hosted)
 
 Author
